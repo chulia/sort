@@ -1,0 +1,10 @@
+.idea/
+*.iml
+.classpath
+.project
+.settings
+.mymetadata
+.DS_Store
+rebel.xml
+.externalToolBuilders
+resolvedPom.xml
