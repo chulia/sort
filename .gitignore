@@ -8,3 +8,5 @@
 rebel.xml
 .externalToolBuilders
 resolvedPom.xml
+/target
+target/
