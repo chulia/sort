@@ -17,14 +17,14 @@ public class InsertSort {
 
     public InsertSort sort() {
         if (toSortArr != null && toSortArr.length > 1) {
-            for (int idx = 1; idx < toSortArr.length; idx++) {
+            for (int idx = 1; idx < toSortArr.length; idx++) { // 待排序列从第2个开始到最后一个
                 int temp = toSortArr[idx];
-                int j = idx - 1;
-                while (j >= 0 && temp < toSortArr[j]) {
-                    toSortArr[j+1] = toSortArr[j];
+                int j = idx - 1; // 已排序列最后一个
+                while (j >= 0 && temp < toSortArr[j]) { // 待排序列第一个依次和已排序列比较
+                    toSortArr[j+1] = toSortArr[j]; // 已排序列依次后移
                     j--;
                 }
-                toSortArr[j+1] = temp;
+                toSortArr[j+1] = temp; // 待排序列第一个填入空位
             }
         }
 
